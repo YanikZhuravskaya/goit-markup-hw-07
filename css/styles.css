@@ -1,0 +1,425 @@
+:root {
+    /* fonts */
+    --second-font: "Raleway";
+    --most-used-font-size:14px;
+
+    /* text colors */
+    --akcent-color: #2196F3;
+    --akcent-light-color: #FFFFFF;
+    --title-color: #212121;
+    --article-color: #757575;
+    --not-active-btm-color: #F5F4FA;
+    --baner-color: #2F303A;
+    /* bground colors */
+
+    /* others */
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--most-used-font-size);
+    color: var(--title-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+p{
+    margin: 0px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* outline: 1px solid red; */
+}
+
+.list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Site bottom bar */
+
+a{
+    text-decoration: none;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+
+    letter-spacing: 0.03em;
+}
+
+.page-header{
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+/* Logo Web Studio */
+
+.logo{
+    font-family: var(--second-font),sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    
+}
+
+.first-side-logo{
+    color: var(--akcent-color);
+}
+.second-side-logo{
+    color: #292929;
+}
+
+.header-logo{
+    margin-right: 93px;
+}
+/* header navigation panel and adress list */
+.header-nav-list,
+.header-adress{
+ display: flex;
+ padding-left: 0px;
+}
+
+.header-nav-list .nav-item:not(:last-child),
+.header-adress .adress-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.header-adress-group{
+    margin-left: auto;
+}
+
+.header-nav-list .item-link,
+.header-adress .item-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-item,
+.adress-item{
+    font-weight: 500;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+}
+
+.nav-item .item-link{
+    color: var(--title-color);
+}
+
+.adress-item .item-link{
+    color: var(--article-color);
+}
+
+.header-nav-list .current .item-link{
+    color: var(--akcent-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nav-item .item-link:focus,
+.nav-item .item-link:hover,
+.adress-item .item-link:focus,
+.adress-item .item-link:hover {
+    color: var(--akcent-color);
+}
+
+/* Site header banner */
+.baner-section{
+    background-color: var(--baner-color);
+}
+
+.baner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.baner-text{
+    color: var(--akcent-light-color);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    /* margin: 200px 452px 30px; */
+    display: block;
+    width: 696px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.baner-btn{
+    color: var(--akcent-light-color);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    background: var(--akcent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    cursor: pointer;
+}
+.baner-btn:focus,
+.baner-btn:hover{ 
+    background: #188CE8;
+}
+
+/* Our credo */
+.credo-ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.credo-item{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    padding: 0px;
+}
+
+.credo-item .credo-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--most-used-font-size);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.credo-item .credo-text{
+    font-weight: 400;
+    line-height: 1.71;
+    text-transform: none;
+
+    color: var(--article-color);
+}
+
+.credo-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* Our prifiles */
+.profile-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile-list{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+
+/* Our team */
+.team-title{
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+.team{
+    background: #F5F4FA;
+}
+
+.team-list{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+
+.worker{
+    background: var(--akcent-light-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.worker-name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.worker-position{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--article-color);
+    
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* site footer */
+footer{
+    background-color: var(--baner-color);
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer .second-side-logo{
+    color: var(--akcent-light-color);
+}
+
+.footer-adress {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-adress .adress-item:not(:last-child){
+    margin-bottom: 9px;
+}
+
+footer .adress-item a{
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    text-transform: none;
+
+    letter-spacing: 0.03em;
+}
+
+.google-adr .item-link{
+    color: var(--akcent-light-color);
+}
+
+.mail-adr .item-link,
+.tel-adr .item-link{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* фильтр на странице Портфолио */
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+.filter-item:not(:last-child){
+    margin-right: 8px;
+}
+
+.filter-btm{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+
+    color: var(--title-color);
+    background: var(--not-active-btm-color);
+    border-color: var(--not-active-btm-color);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.filter-btm:hover,
+.filter-btm:focus{
+    color: var(--akcent-light-color);
+    background: var(--akcent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* набор карточек портфолио */
+.job-list-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 34px;
+}
+
+.job-item-element{
+    background: var(--akcent-light-color);
+    padding: 0px;
+    max-height: 404px;
+}
+
+.job-item-content{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.job-item-name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+
+    letter-spacing: 0.06em;
+
+    color: var(--title-color);
+    margin-bottom: 4px;
+}
+
+.job-item-type{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+
+    letter-spacing: 0.03em;
+
+    color: var(--article-color);
+}
