@@ -155,6 +155,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 200px 0px;
 }
 
 .baner-text{
@@ -168,10 +169,8 @@ a{
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    /* margin: 200px 452px 30px; */
     display: block;
-    width: 696px;
-    margin-top: 200px;
+    max-width: 696px;
     margin-left: auto;
     margin-right: auto;
 
@@ -188,10 +187,8 @@ a{
     background: var(--akcent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    width: 200px;
-    height: 50px;
+    padding: 10px 32px;
     margin-top: 30px;
-    margin-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
 
@@ -205,7 +202,7 @@ a{
 /* Our credo */
 .credo-ul{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .credo-item{
@@ -233,12 +230,15 @@ a{
     color: var(--article-color);
 }
 
-.credo-container{
-    padding-top: 94px;
-    padding-bottom: 94px;
+.credo{
+    padding: 94px 0px;
 }
 
 /* Our prifiles */
+.profile{
+    padding: 94px 0px;
+}
+
 .profile-title{
     text-align: center;
     margin-bottom: 50px;
@@ -246,24 +246,24 @@ a{
 
 .profile-list{
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 94px;
+    gap: 30px;
 }
 
 /* Our team */
+.team {
+    background: #F5F4FA;
+    padding: 94px 0px;
+}
+
 .team-title{
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
-.team{
-    background: #F5F4FA;
+    margin-bottom: 50px;
 }
 
 .team-list{
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 94px;
+    gap: 30px;
+    /* padding-bottom: 94px; */
 }
 
 .worker{
@@ -272,15 +272,18 @@ a{
     border-radius: 0px 0px 4px 4px;
 }
 
+.worker-info{
+    padding: 30px 0px;
+}
+
 .worker-name{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-
     letter-spacing: 0.03em;
+
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .worker-position{
@@ -291,19 +294,17 @@ a{
     color: var(--article-color);
     
     text-align: center;
-    margin-bottom: 30px;
 }
 
 /* site footer */
 footer{
     background-color: var(--baner-color);
+    padding: 60px 0px;
 }
 
 .footer-container{
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 footer .second-side-logo{
@@ -341,14 +342,13 @@ footer .adress-item a{
 
 /* фильтр на странице Портфолио */
 .portfolio{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0px;
 }
 
 .filter{
     display: flex;
     justify-content: center;
-    padding-bottom: 16px;
+    margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child){
@@ -374,6 +374,7 @@ footer .adress-item a{
     cursor: pointer;
 }
 
+.active,
 .filter-btm:hover,
 .filter-btm:focus{
     color: var(--akcent-light-color);
@@ -386,7 +387,6 @@ footer .adress-item a{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-top: 34px;
 }
 
 .job-item-element{
