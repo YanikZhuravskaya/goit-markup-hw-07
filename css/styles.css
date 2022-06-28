@@ -10,6 +10,7 @@
     --article-color: #757575;
     --not-active-btm-color: #F5F4FA;
     --baner-color: #2F303A;
+    --not-active-icon-color: #AFB1B8;
     /* bground colors */
 
     /* others */
@@ -43,7 +44,6 @@ img{
     margin-left: auto;
     margin-right: auto;
 
-    /* outline: 1px solid red; */
 }
 
 .list {
@@ -139,6 +139,11 @@ a{
     color: var(--akcent-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.contacts-icon{
+    fill: currentColor;
+}
+
 .nav-item .item-link:focus,
 .nav-item .item-link:hover,
 .adress-item .item-link:focus,
@@ -148,7 +153,14 @@ a{
 
 /* Site header banner */
 .baner-section{
+    max-width: 1600px;
+    margin: 0 auto;
     background-color: var(--baner-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) 40%),
+                    url('../images/banner/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .baner-container{
@@ -212,6 +224,17 @@ a{
     padding: 0px;
 }
 
+.credo-icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--not-active-btm-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
 .credo-item .credo-title{
     font-style: normal;
     font-weight: 700;
@@ -236,7 +259,7 @@ a{
 
 /* Our prifiles */
 .profile{
-    padding: 94px 0px;
+    padding-bottom: 94px;
 }
 
 .profile-title{
@@ -251,7 +274,7 @@ a{
 
 /* Our team */
 .team {
-    background: #F5F4FA;
+    background: var(--not-active-btm-color);
     padding: 94px 0px;
 }
 
@@ -263,7 +286,6 @@ a{
 .team-list{
     display: flex;
     gap: 30px;
-    /* padding-bottom: 94px; */
 }
 
 .worker{
@@ -294,8 +316,72 @@ a{
     color: var(--article-color);
     
     text-align: center;
+    margin-bottom: 16px;
 }
 
+.social-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--not-active-icon-color);
+    background-color: var(--akcent-light-color);
+    border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+    color: var(--akcent-light-color);
+    background-color: var(--akcent-color);
+}
+
+.social-icon {
+    fill: currentColor;
+}
+
+/* regular customers */
+.regular-customers{
+    padding: 94px 0px;
+}
+
+.regular-customers-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.regular-customers-list{
+    display: flex;
+    gap: 30px;
+}
+
+.customer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: var(--not-active-icon-color);
+    background-color: var(--akcent-light-color);
+    border: 1px solid var(--not-active-icon-color);
+    border-radius: 4px;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+    color: var(--akcent-color);
+    border-color: var(--akcent-color);
+}
+
+.customer-icon {
+    fill: currentColor;
+}
 /* site footer */
 footer{
     background-color: var(--baner-color);
@@ -304,7 +390,13 @@ footer{
 
 .footer-container{
     display: flex;
+}
+
+.footer-sidebar {
+    display: flex;
     flex-direction: column;
+    padding-right: 0px;
+    margin-right: 70px;
 }
 
 footer .second-side-logo{
@@ -331,7 +423,8 @@ footer .adress-item a{
     letter-spacing: 0.03em;
 }
 
-.google-adr .item-link{
+.google-adr .item-link,
+.footer-social-box{
     color: var(--akcent-light-color);
 }
 
@@ -340,6 +433,42 @@ footer .adress-item a{
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-social-box>h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 12px 0px 20px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--akcent-light-color);
+    background-color: rgba(255, 255, 255, 0.1);;
+    border-radius: 50%;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    color: var(--akcent-light-color);
+    background-color: var(--akcent-color);
+}
+
+.footer-social-icon {
+    fill: currentColor;
+}
 /* фильтр на странице Портфолио */
 .portfolio{
     padding: 94px 0px;
@@ -393,6 +522,13 @@ footer .adress-item a{
     background: var(--akcent-light-color);
     padding: 0px;
     max-height: 404px;
+
+    cursor: pointer;
+}
+
+.job-item-element:hover,
+.job-item-element:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .job-item-content{
