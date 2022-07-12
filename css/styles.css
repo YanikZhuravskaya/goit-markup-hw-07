@@ -227,6 +227,7 @@ a {
   background: var(--akcent-color);
   box-shadow: var(--popular-shadow);
   border-radius: 4px;
+  border-color: transparent;
   padding: 10px 32px;
   margin-top: 30px;
   margin-left: auto;
@@ -549,7 +550,7 @@ footer .adress-item a {
   display: flex;
 }
 
-.footer-mail-box input {
+.footer-mail-input {
   width: 358px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -569,7 +570,7 @@ footer .adress-item a {
   transition: border-color var(--animation-time) var(--animation-type);
 }
 
-.footer-mail-box input::placeholder {
+.footer-mail-input::placeholder {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -578,7 +579,7 @@ footer .adress-item a {
   color: var(--footer-dark-txt);
 }
 
-.footer-mail-box input:focus {
+.footer-mail-input:focus {
   border-color: var(--akcent-color);
 }
 
@@ -868,10 +869,12 @@ footer .adress-item a {
   position: absolute;
   bottom: 11px;
   left: 12px;
+  transition: fill var(--animation-time) var(--animation-type);
 }
 
 .modal-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
   font-style: normal;
@@ -880,10 +883,13 @@ footer .adress-item a {
   line-height: 1.14;
   letter-spacing: 0.01em;
   padding: 12px 16px 12px 42px;
+
+  transition: outline-color var(--animation-time) var(--animation-type);
 }
 
 .modal-input:focus {
-  border-color: var(--akcent-color);
+  /* border-color: var(--akcent-color); */
+  outline-color: var(--akcent-color);
 }
 
 .modal-input:focus + .modal-icon {
