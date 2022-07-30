@@ -1,0 +1,48 @@
+/* подпишитесь на рассылку */
+.mailbox {
+    margin-left: auto;
+    color: var(--akcent-light-color);
+
+    &__title {
+        @include get-font-style(normal, 700, 14px, 1.14, 0.03em);
+        text-transform: uppercase;
+        margin: 12px 0px 20px;
+        user-select: none;
+    }
+
+    &__block {
+        display: flex;
+    }
+
+    &__icon {
+        fill: currentColor;
+
+        position: absolute;
+        top: 13px;
+        right: 28px;
+    }
+}
+
+.mailbox__input {
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: transparent;
+    filter: drop-shadow(var(--popular-shadow));
+    border-radius: 4px;
+    background: transparent;
+
+    @include get-font-style(normal, 400, 16px, 1.25, 0.03em);
+    color: var(--akcent-light-color);
+    padding: 15px 0px 15px 16px;
+
+    transition: border-color var(--animation-time) var(--animation-type);
+    
+    &::placeholder {
+        @include get-font-style(normal, 400, 16px, 1.25, 0.03em);
+        color: var(--footer-dark-txt);
+    }
+
+    &:focus {
+        border-color: var(--akcent-color);
+    }
+}

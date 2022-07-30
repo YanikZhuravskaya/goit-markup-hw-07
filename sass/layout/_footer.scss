@@ -1,0 +1,18 @@
+/* ============ */
+/* site footer */
+/* ============ */
+.footer {
+    background-color: var(--baner-color);
+    padding: 60px 0px;
+
+    &__container {
+        display: flex;
+    }
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    margin-right: 70px;
+}

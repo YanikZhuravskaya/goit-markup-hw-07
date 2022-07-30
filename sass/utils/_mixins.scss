@@ -1,0 +1,7 @@
+@mixin get-font-style($fstyle, $fweight, $fsize, $lheight, $lspasing) {
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-size: $fsize;
+    line-height: $lheight;
+    letter-spacing: $lspasing;
+}

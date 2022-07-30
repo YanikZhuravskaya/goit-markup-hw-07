@@ -1,0 +1,15 @@
+/* Our team */
+.team {
+    background: var(--not-active-btm-color);
+    padding: 94px 0px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+}

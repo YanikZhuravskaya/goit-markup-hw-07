@@ -1,0 +1,50 @@
+/* набор карточек портфолио */
+.job {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__img {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__content {
+        padding: 20px 24px;
+        border: 1px solid #eeeeee;
+        border-top: none;
+    }
+
+    &__name {
+        @include get-font-style(normal, 700, 18px, 2, 0.06em);
+        color: var(--title-color);
+        
+        margin-bottom: 4px;
+    }
+
+    &__type {
+        @include get-font-style(normal, 400, 16px, 1.88, 0.03em);
+        color: var(--article-color);
+    }
+}
+
+.job__element {
+    background: var(--akcent-light-color);
+    padding: 0px;
+    max-height: 404px;
+
+    cursor: pointer;
+
+    transition: box-shadow var(--animation-time) var(--animation-type);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        transform: translateY(0);
+    }
+
+    &:hover .overlay {
+        transform: translateY(0);
+    }
+}
