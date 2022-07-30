@@ -14,7 +14,7 @@
     border-radius: 4px;
     cursor: default;
 
-    &_main-title {
+    &__main-title {
         @include get-font-style(normal, 700, 20px, 1.15, 0.03em);
         text-align: center;
         user-select: none;
