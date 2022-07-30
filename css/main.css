@@ -119,14 +119,14 @@ a {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.logo--start-color {
+.logo-left {
   color: var(--akcent-color);
 }
-.logo--end-color {
+.logo-right {
   color: #292929;
 }
 
-.footer__logo--end-color {
+.footerlogo-right {
   color: var(--akcent-light-color);
 }
 
@@ -921,7 +921,7 @@ a {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.credo--text-style {
+.credo__textstyle {
   font-weight: 400;
   line-height: 1.71;
   text-transform: none;
@@ -1028,7 +1028,7 @@ a {
   border-radius: 4px;
   cursor: default;
 }
-.modal_main-title {
+.modal__main-title {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
