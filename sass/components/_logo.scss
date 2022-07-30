@@ -3,15 +3,15 @@
     @include get-font-style(null, 700, 26px, 1.19, 0.03em);
     text-decoration: none;
 
-    &--start-color {
+    &-left {
         color: var(--akcent-color);
     }
 
-    &--end-color {
+    &-right {
         color: #292929;
     }
 }
 
-.footer__logo--end-color {
+.footerlogo-right {
     color: var(--akcent-light-color);
 }
